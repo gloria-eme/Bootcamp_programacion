@@ -7,3 +7,6 @@ let x="gloria"; //string
     x = undefined; //undefined
     x = {name: "Gloria", surname:"apellido"};  //Object
     x = [1, 2, 3, 4];  //Array (deriva de la clase Object)
+
+
+    console.log(undefined)
