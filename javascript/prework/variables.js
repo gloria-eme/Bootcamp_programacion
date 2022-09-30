@@ -8,5 +8,7 @@ let x="gloria"; //string
     x = {name: "Gloria", surname:"apellido"};  //Object
     x = [1, 2, 3, 4];  //Array (deriva de la clase Object)
 
-
-    console.log(undefined)
+let name = prompt("Cuál es tu nombre?")
+let edad = prompt ("Y cuántos años tienes?")
+function usuario = [("Entonces te llamas ") + name + ("y tienes ") + edad + (" años")]
+console.log(usuario)
