@@ -1,0 +1,29 @@
+div, p, span, a{
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+div, p {
+    display: inline;   
+}
+
+div {
+    background-color: #e74c3c;  
+}
+
+p {
+    background-color: #9b59b6;
+}
+
+span {
+    display: inline;
+    background-color: #3498db;
+}
+
+a {
+    background-color: #2ecc71;
+}
+

@@ -1,0 +1,19 @@
+.small{
+    font-size: 9px;
+}
+
+.myTitle {
+    font-family:  "Lobster", Verdana, Geneva;
+}
+h1 {
+    color: #c92a2a;
+}
+h2 {
+    color: #a61e4d;
+}
+.first, .second {
+    color: #364fc7;
+}
+.second {
+    border-bottom: 1px solid #c92a2a;
+}

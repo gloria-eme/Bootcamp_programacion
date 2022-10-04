@@ -1,5 +1,6 @@
 //recuperando los elementos del DOM
 //la vble se convierte en un NODO para almacenar elementos de HTML en JS
+//Los NODOS
 
 //------YA NO SE UTILIZAN-------//
 //getElementebyID: se recupera por el nombre del id del HTML (no recupera class, solo id)
@@ -15,7 +16,8 @@ const allDivs = document.getElementsByTagName("div");
 console.log(allDivs);
 
 //-------ESTOS SON LOS QUE SE USAN SIEMPRE-----//
-//querySelector -> recupera un elelento del DOM y dpendiendo de si escribimos .clase,3id o etiqueta, recuperaremos dicho elemento. 
+
+//querySelector -> recupera un elelento del DOM y dpendiendo de si escribimos .clase, id o etiqueta, recuperaremos dicho elemento. 
 //Si hay varios elementos que se llaman igual (div), cogerá solo el primero
 const querySubtitle = document.querySelector("#subtitle");
 const queryParagraph = document.querySelector(".paragraph"); 
