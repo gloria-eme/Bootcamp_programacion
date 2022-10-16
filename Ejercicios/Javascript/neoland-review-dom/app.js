@@ -64,15 +64,26 @@ btn.addEventListener("click", (ev) => List3.removeChild(List3.lastChild));
 body.appendChild(btn);
 
 //1.6
-const allList = document.querySelectorAll("li");
+// const allList = document.querySelectorAll("li");
 
-for (const list of allList) {
-    const btns = document.createElement("button");
-list.appendChild(btns);
-btns.textContent= "clickame y verás qué hago";
-btns.addEventListener("click", () => btns.parentElement.remove())
+// for (const list of allList) {
+//     const btns = document.createElement("button");
+// list.appendChild(btns);
+// btns.textContent= "clickame y verás qué hago";
+// btns.addEventListener("click", () => btns.parentElement.remove())
+// }
+const input = document.querySelector("input");
+
+function buscarNombre() {
+
+  const result = streamers.filter((streamer) => {
+    if (streamer.name.includes(input.value)) {
+       console.log(streamer.name);
+      return input.textContent= streamer.name;
+    }
+  });
 }
-
+input.addEventListener("input", buscarNombre);
 
 
 
