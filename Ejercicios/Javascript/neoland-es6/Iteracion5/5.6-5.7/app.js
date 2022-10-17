@@ -5,16 +5,13 @@ const streamers = [
 	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
 	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
-;
-const inputFilter = streamers.filter ((streamer) => {
-	return streamer.name.includes(input.value);
-	})
 
-    inputText.addEventListener ('input', () => {
-        const inputText = document.querySelector("[data-function='toFilterStreamers']").value;
-        console.log(inputFilter)
-    })
+const inputText = document.querySelector("[data-function='toFilterStreamers']");
+const inputFilter = streamers.filter (streamer => 
+	streamer.name.includes(inputText.value));
+
+    inputText.addEventListener('input', (ev) => console.log(inputFilter));
 
 //5.7
-// const btn = document.querySelector("[data-function=toShowFilterStreamers']")
-// btn.addEventListener("click", () => )
+const btn = document.querySelector("[data-function=toShowFilterStreamers']")
+btn.addEventListener("click", (ev) => console.log(inputFilter));
